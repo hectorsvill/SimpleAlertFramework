@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C463F71E234BE993002EAB07 /* SimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = C463F71C234BE993002EAB07 /* SimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C463F725234BE9C8002EAB07 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463F724234BE9C8002EAB07 /* SimpleAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C463F719234BE993002EAB07 /* SimpleAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C463F71C234BE993002EAB07 /* SimpleAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleAlert.h; sourceTree = "<group>"; };
 		C463F71D234BE993002EAB07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C463F724234BE9C8002EAB07 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				C463F71C234BE993002EAB07 /* SimpleAlert.h */,
+				C463F724234BE9C8002EAB07 /* SimpleAlert.swift */,
 				C463F71D234BE993002EAB07 /* Info.plist */,
 			);
 			path = SimpleAlert;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					C463F718234BE993002EAB07 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C463F725234BE9C8002EAB07 /* SimpleAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		C463F722234BE993002EAB07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hectorstevenvillasano.SimpleAlert;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		C463F723234BE993002EAB07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

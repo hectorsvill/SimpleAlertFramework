@@ -20,4 +20,14 @@ public class Service {
         return alertController
     }
     
+    
+    public static func actionSheetCanecel(title: String, actionTitle: String, completion: @escaping () -> ()) -> UIAlertController{
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completion()
+        }))
+        alertController.addAction(UIAlertAction(title: actionTitle, style: .cancel))
+        return alertController
+    }
+    
 }
